@@ -1,0 +1,17 @@
+{
+  "http_headers": {
+    "x-amz-id-2": "/16vtlIwTZeOzCP+N1l0/d+w5HOuozuN5/TPT26sTO0fBBdpQTjhIqEoDcpKdriZjlrXP+P2BW8=",
+    "x-amz-request-id": "21DG8GTJV2BXVY9K",
+    "Date": "Mon, 12 Oct 2026 13:08:34 GMT",
+    "Last-Modified": "Tue, 23 Jun 2026 16:46:49 GMT",
+    "ETag": "\"0ac97a78f34c853b690aadb750e1ecfd-594\"",
+    "x-amz-storage-class": "INTELLIGENT_TIERING",
+    "x-amz-server-side-encryption": "AES256",
+    "x-amz-version-id": "gsD.JfA_zahs_FTY4u3b.hvx9IiiKmxe",
+    "Accept-Ranges": "bytes",
+    "Content-Type": "binary/octet-stream",
+    "Content-Length": "4976204965",
+    "Server": "AmazonS3",
+    "Connection": "close"
+  }
+}

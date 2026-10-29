@@ -1,0 +1,81 @@
+{
+  "release_date": "2026-10-28",
+  "status": "PACKAGING_STATIC_AND_SYNTHETIC_PASS_WITH_DECLARED_GAPS",
+  "scientific_reproduction_status": "NOT_EXECUTED",
+  "base_zip_sha256": "c9bf578a3b5159c8fd8fd619a826d511c0178b0b4fe5db7959aefdad30c63215",
+  "base_zip_bytes": 265216,
+  "base_files": 51,
+  "base_files_byte_identical": 50,
+  "base_only_changed_content": "README.md",
+  "CCC": "moved byte-identical to excluded_legacy; invalid all-NaN p=1/2001; not executed or repaired",
+  "original_source_records": 116,
+  "source_project_files_unchanged": true,
+  "mathematical_helpers_byte_identical": [
+    "human_pipeline/human_analysis/gse48350_v1/scripts/fixed_pipeline.py",
+    "human_pipeline/human_analysis/sea_hip_v1/scripts/sea_helpers.py",
+    "human_pipeline/human_analysis/h2_v1/scripts/h2_core.py"
+  ],
+  "static_python_count": 57,
+  "static_original_source_text_count": 11,
+  "safe_and_toy_command_count": 50,
+  "tests": {
+    "original_core_versions_install": "PASS; complete historical transitive environment not claimed",
+    "gse_toy": "known OLS/HC3 Student-t df/CI, transformations/probe medians, fixed reference and design/coverage gates",
+    "sea_toy": "component/libraries/full-feature CPM, fixed reference/weights and five-term HC3",
+    "sparse_toy": "17 exact accumulation/conservation synthetic cases",
+    "h2_unit_tests": 25,
+    "h2_template": "16 synthetic rows + labelled synthetic PDF/PNG; not biological outputs",
+    "extra": "both observed/null nonfinite and invalid score rejection; original fixed-slot Holm/BH compared with statsmodels; inherited bh_fixed infinity limitation exposed",
+    "finite_checks": "observed and null checked before empirical comparisons; no NaN->small empirical P accepted in helper smoke"
+  },
+  "not_executed": [
+    "large downloads",
+    "real raw h5ad aggregation",
+    "GSE original cohort fits",
+    "SEA original cohort fits",
+    "H2 real matched draws",
+    "real combined multiplicity or registry assembly",
+    "mouse statistics",
+    "CCC",
+    "cognition or genetics",
+    "original-cohort figure reproduction"
+  ],
+  "H2_frozen_files": {
+    "bundled_and_matching_records": 37,
+    "bundled_and_matching_unique_files": 36,
+    "omitted": [
+      "H2_design/raw/gencode.v32.primary_assembly.annotation.gtf.gz",
+      "human_data/sea_hip/counts.npz"
+    ]
+  },
+  "remaining_gaps": [
+    "No end-to-end raw or frozen-intermediate scientific execution in packaging",
+    "Exact large raw/count/GTF inputs omitted, with source identities/preparation commands",
+    "H2 exact lock includes original historical QA/code attestations; new runtime QA is not interchangeable",
+    "Historical manual scale/annotation interpretation and full preflight QA not newly reproduced; supported entry uses exact frozen crosswalks",
+    "SEA legacy-feature union versus current requantification remains unverified",
+    "Inherited bh_fixed infinity-as-unavailable API limitation not repaired; callers must validate status/finite P",
+    "Missing/unsaved upstream mouse generators only inventoried",
+    "Original Figure2/3 manuscript-layout generators not claimed complete; original H2 plot helper supplied",
+    "Integrated registry excerpt retains historical H4 narrative, not a new genetics result"
+  ],
+  "privacy": {
+    "status": "PASS_bounded_scan",
+    "secret_patterns": [
+      "private_key",
+      "aws_access_key",
+      "github_token",
+      "credential_assignment",
+      "bearer_credential"
+    ],
+    "confirmed_secret_hits": [],
+    "public_GEO_URLs_and_donor_IDs_not_treated_as_secrets": true,
+    "unrelated_clinical_fields_removed_from_runtime_tables": true,
+    "projection_manifests_instead_of_value_leaking_data_diffs": true,
+    "raw_workbooks_and_h5ad_not_bundled": true,
+    "no_venv_or_dependencies": true,
+    "limitations": "Pattern/header/allowlist scan, not a guarantee against all possible sensitive content; base candidate/author metadata inherited. Public HTTP request IDs in historic manifests are not credentials."
+  },
+  "licence": "MIT and author inherited; not independently authenticated; data and third-party dependencies retain original terms; Allen data noncommercial research conditions apply",
+  "delivery_support": "actual selected source code + small frozen lookups + auditable portability adapters + exact external input manifest + tested synthetic helpers, NOT verified scientific reproduction"
+}

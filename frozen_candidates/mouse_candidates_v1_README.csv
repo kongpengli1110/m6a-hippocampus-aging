@@ -1,0 +1,19 @@
+item,description
+Version / freeze,"mouse_candidates_v1, frozen 2026-10-12 (phase 2b). No modification allowed after human data are inspected; any later change -> new version file with changelog."
+Purpose,Candidate genes/sets from the mouse storyline: aging m6A hypomethylation in hippocampus attributable to excitatory neurons + weakening METTL3-dependent program; for human transcriptomic/genetic tests (performed by assistant 2).
+E1 MeRIP evidence,"Hypomethylated with age (3 vs 16 mo) in >=2 of CA1/CA3/DG: GSE198526 / PNAS 2023 Dataset S17 (FC>=1.2, padj<=0.05, authors' consistent-peak calls). Tissue-level MeRIP; not cell-specific."
+E2 cell-type evidence,"Allen Zeng-Aging-Mouse-10Xv3 HPF (unbiased libraries, 8 adult vs 15 aged donors): sum of specificity (mean CPM share) in CA1+CA3+DG+SUB glutamatergic types >=0.5."
+Module evidence,Signed WGCNA-like networks on metacells of Allen HPF CA1/DG/CA3/SUB neurons (scripts/24); modules enriched (BH q<0.01) for A1 hypo or METTL3 target sets; member with kME>=0.6 counts.
+METTL3/YTHDF1 program evidence,METTL3cKO_HIP_down (GSE113796) or METTL3 KO cerebellum m6A-loss peaks (RM2Target/GSE100528) or YTHDF1 CLIP hippocampus (GSE106607).
+scDART evidence,Tegowski 2024 Supp Table 10 cortex glutamatergic aging DM-RNA (either direction). Conditional/orthogonal only (2 reps/age; age confounded with kit).
+Allen age evidence,Allen excitatory pseudobulk DESeq2 aged-vs-adult padj<0.1 in any of CA1/CA3/DG/SUB.
+Evidence score / tiers,"score = n_regions_hypo(2-3) + module + program + scDART + Allen_age (max 7). Tier1 >=5, Tier2 =4. Core = top 50 with score>=4, ranked by score then kME."
+Core list,See sheet core_candidates.
+Ortholog mapping,"MGI HOM_MouseHumanSequence.rpt (downloaded 2026-10-12, md5 89dc473ae85b11204fec5318bbf9ed81); outdated mouse symbols mapped to current MGI symbol via MRK_List2.rpt synonyms (md5 30e1088b64f45d2fd45c6befb3867e36). ortholog_type 1:1 recommended for tests; others flagged; blank = no MGI human ortholog."
+Pre-specified human hypotheses,All directions stated as human-equivalent of mouse findings; one-sided tests allowed only in stated direction.
+H1,"H1 (expression, aging): core-list score (mean z) is LOWER in older vs younger human hippocampus/cortex, preferentially in excitatory-neuron pseudobulk (snRNA) rather than glia."
+H2,H2 (cell-type specificity): core list and module sets are enriched among human excitatory-neuron-specific genes (EWCE-like with expression-matched background).
+H3,"H3 (program): METTL3cKO_HIP_down ortholog set shows lower activity with age in human excitatory neurons; direction of effect only, no m6A claim."
+H4,"H4 (genetics, exploratory): no directional prior for cognition GWAS/eQTL colocalisation; report as exploratory; mouse cognition association was NULL (GSE302188 within-old q>=0.39; GSE13799 non-replicating)."
+What NOT to claim,Do not describe any human expression result as validating m6A changes. Mouse sc/bulk RNA supports expression/cell state only. Bulk MeRIP is tissue-level.
+Sheets,README; core_candidates; all_E1E2_candidates; module_genesets; program_genesets

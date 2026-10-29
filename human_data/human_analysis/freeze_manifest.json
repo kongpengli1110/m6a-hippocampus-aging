@@ -1,0 +1,164 @@
+{
+  "version": "human_analysis_v1",
+  "status": "INTERNALLY_PROSPECTIVELY_LOCKED",
+  "lock_recorded_at": "2026-10-12T21:14:35.754652+08:00",
+  "owner": "assistant2",
+  "authorization_basis": "Responsible owner decisions relayed by parent agent; internal prospective lock; not user item-by-item approval",
+  "external_registry_registration": false,
+  "user_item_by_item_approval": false,
+  "human_association_results_available_at_lock": false,
+  "new_association_analysis_performed_for_lock": false,
+  "scientific_rules_changed_from_draft": false,
+  "candidate_xlsx": {
+    "path": "/workspace/projects/m6a-aging-paper/handoff/frozen_v1/mouse_candidates_v1.xlsx",
+    "md5": "7fd7ac5097f9dad9977eea804edeb36e"
+  },
+  "frozen_files": [
+    {
+      "path": "/workspace/projects/m6a-aging-paper/human_analysis/human_analysis_plan_v1.md",
+      "sha256": "c8ecd963efff5ea4b078c223fddfc2a3ccbd9e2a6b1ff987aa1f74e17d5bc31a"
+    },
+    {
+      "path": "/workspace/projects/m6a-aging-paper/human_analysis/prespecified_tests_v1_frozen.tsv",
+      "sha256": "d20d4220ec0b5c1cffa563c02b9b510ab33f95657fdfb132302be2f1ac7a43a1"
+    }
+  ],
+  "preserved_sources": [
+    {
+      "path": "/workspace/projects/m6a-aging-paper/human_analysis/human_analysis_plan_v1_draft.md",
+      "sha256": "57e8c88eba003ab7c6a8e9de5ba4f7e0c49046bf8f51c08be999e1209bd80c4e"
+    },
+    {
+      "path": "/workspace/projects/m6a-aging-paper/human_analysis/prespecified_tests_v1.tsv",
+      "sha256": "b7eeb0e87297be0f5cba5fcc0c8fb321c033dbd9a05b670644e0d0f7d78789ed"
+    }
+  ],
+  "primary_family": {
+    "test_ids": [
+      "P01",
+      "P02",
+      "P03"
+    ],
+    "method": "Holm",
+    "fixed_m": 3,
+    "alpha": 0.05,
+    "tails": "two-sided"
+  },
+  "cognition_windows_years": {
+    "primary_exploratory": [
+      0,
+      2
+    ],
+    "sensitivity": [
+      0,
+      5
+    ],
+    "execution_status": "PENDING"
+  },
+  "pending_gates": [
+    {
+      "gate_id": "SEA_VERIFIED_COUNTS_AND_TECHNICAL_QC",
+      "status": "PENDING_ACCEPTANCE_FROM_OTHER_TASK",
+      "scope": "SEA expression tests",
+      "required": "Verified raw-UMI layer identity/nonnegative integer checks; sum libraries within donor-target; all-gene library totals; sample/gene coverage and design checks per locked plan"
+    },
+    {
+      "gate_id": "COGNITION_DICTIONARY_PRECISION_AND_TIME_QC",
+      "status": "PENDING",
+      "scope": "All MEM_E, slope_zmem0 and cognition sensitivity tests",
+      "required": "Authoritative field meanings, units/directions, age/time precision, negative-gap resolution, slope definition/window, duplicate QC and fixed-window eligibility before any cognition association"
+    },
+    {
+      "gate_id": "H2_REFERENCE_BACKGROUND_ADDENDUM",
+      "status": "REGISTERED_NOT_EXECUTABLE",
+      "scope": "H2_01-H2_08",
+      "required": "Freeze full-gene reference/taxonomy/background manifests, expression-matching feasibility and complete independent enrichment-test addendum before H2 results"
+    },
+    {
+      "gate_id": "H4_GENETICS_ADDENDUM",
+      "status": "CONDITIONAL_LATER_NOT_EXECUTABLE",
+      "scope": "H4_01",
+      "required": "Freeze genetic inputs/traits/tissue/ancestry/LD/harmonization/locus windows/colocalization model and multiplicity before genetic tests"
+    },
+    {
+      "gate_id": "PER_TEST_TECHNICAL_AND_DESIGN_CHECKS",
+      "status": "REQUIRED_AT_EXECUTION",
+      "scope": "All executable expression tests",
+      "required": "Input checksum/identity, fixed mapping/coverage, score references, complete-case n and full-rank design checks specified in the locked plan"
+    }
+  ],
+  "validation": {
+    "test_rows": 62,
+    "unique_ids": 62,
+    "family_counts": {
+      "PRIMARY": 3,
+      "E_EXPR": 11,
+      "E_MODULE": 7,
+      "E_COG": 8,
+      "E_AD": 1,
+      "H2_FUTURE": 8,
+      "H4_FUTURE": 1,
+      "E_SENS": 23
+    },
+    "nonstage_tsv_cells_identical_to_original": true,
+    "stage_change": "PLANNED_AFTER_FREEZE -> LOCKED_PENDING_TECHNICAL_GATES",
+    "stage_changed_test_ids": [
+      "P01",
+      "P02",
+      "P03",
+      "E01",
+      "E02",
+      "E03",
+      "E04",
+      "E05",
+      "E06",
+      "E07",
+      "E08",
+      "E09",
+      "E10",
+      "E11",
+      "M01",
+      "M02",
+      "M03",
+      "M04",
+      "M05",
+      "M06",
+      "M07",
+      "D01",
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05",
+      "S06",
+      "S07",
+      "S08",
+      "S09",
+      "S10",
+      "S11",
+      "S12",
+      "S13",
+      "S14",
+      "S15",
+      "S16",
+      "S17",
+      "S18",
+      "S23"
+    ],
+    "cognition_H2_H4_stage_fields_unchanged": true,
+    "draft_and_original_tsv_unchanged": true
+  },
+  "lock_date": "2026-10-12",
+  "lock_time_evidence": {
+    "source": "Filesystem mtime observed before timestamp-only metadata correction",
+    "path": "/workspace/projects/m6a-aging-paper/human_analysis/human_analysis_plan_v1.md",
+    "first_saved_mtime_ns": 1791810875754652149,
+    "timezone": "UTC+08:00",
+    "tool_system_clock_when_checked": "2026-10-12T21:14:42.427529+08:00"
+  },
+  "metadata_timestamp_correction": {
+    "reason": "Parent corrected prewritten 21:15; replaced with verified first-save time",
+    "scientific_rules_changed": false,
+    "corrected_at_tool_clock": "2026-10-12T21:14:54.609023+08:00"
+  }
+}

@@ -1,0 +1,3 @@
+# Excluded historical CCC calculation — DO NOT RUN
+
+`mouse_pipeline/27_ccc.py` is retained byte-for-byte from the original package, moved from the active mouse pipeline. Its historical computation produced all-NaN statistics and p=1/2001, which is not valid empirical evidence. It is not used in this paper, was not repaired or executed during supplementation, and must not be run as part of the manuscript workflow. File SHA256 and the exact move are in `../human_pipeline/provenance/base_member_comparisons.json`. Other mouse files are inherited without algorithm changes or independent reproduction claims. Cognition/genetics-labelled mouse scripts also do not establish new valid cognition/genetics analyses in this manuscript.

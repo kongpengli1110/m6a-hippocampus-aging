@@ -1,0 +1,33 @@
+{
+  "zip_bytes": 12001,
+  "zip_sha256": "21b8715cd42ad9b17e8e2539244e4f8709462ff371f1566d57cb67e6bb88163c",
+  "crc_pass": true,
+  "sha_all_pass": true,
+  "executed_code": false,
+  "files": {
+    "26_handoff_candidates.py": {
+      "bytes": 10289,
+      "sha256": "56acbe3a407f1e25f19e90b936a8c9ef9e01c2b410e79359b091735641dc9263",
+      "status": "PASS",
+      "provenance": "original previously existing file per source"
+    },
+    "08_regulator_target_sets.py": {
+      "bytes": 2347,
+      "sha256": "d77cdcf4d0f605e1a36528ccf51adeba3ce9b2ce678f96e78b719ef29eccc3f4",
+      "status": "PASS",
+      "provenance": "original previously existing file per source"
+    },
+    "CANDIDATE_SPEC.md": {
+      "bytes": 9796,
+      "sha256": "7e5a27be5b190b3b2bbc3dd08f73fb93ff37318bfa532244e47e67ac1d14f82d",
+      "status": "PASS",
+      "provenance": "original previously existing file per source"
+    },
+    "regulator_set_sources.csv": {
+      "bytes": 5633,
+      "sha256": "618cdbe42ae8615c063f3fec6b24a01926a27d82fee1a3ffc0618672ef34b14d",
+      "status": "PASS",
+      "provenance": "NEW source table assembled 2026-10-20 by original analyst; not historical artifact"
+    }
+  }
+}

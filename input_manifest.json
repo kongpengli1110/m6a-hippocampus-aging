@@ -1,0 +1,98 @@
+{
+  "scope": "Exact public/frozen inputs; live URLs not downloaded in packaging; content availability may change; hashes are the required identity",
+  "external_and_raw": [
+    {
+      "id": "gse-matrix",
+      "path": "human_preflight/raw/GSE48350_series_matrix.txt.gz",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE48nnn/GSE48350/matrix/GSE48350_series_matrix.txt.gz",
+      "version": "Mon, 03 Aug 2026 06:05:25 GMT",
+      "bytes": 60194969,
+      "sha256": "4bb36e0cf50306a96aea853de5f70d5ab63345238997bed8c9b5b290ced58fef",
+      "delivery_status": "external_raw_omitted",
+      "preparation_command": "python get_inputs.py --id gse-matrix --download --execute",
+      "identity_source": "human_preflight/raw/download_manifest.json",
+      "downloaded_this_release": false
+    },
+    {
+      "id": "gpl570-annotation",
+      "path": "human_preflight/raw/GPL570.annot.gz",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/platforms/GPLnnn/GPL570/annot/GPL570.annot.gz",
+      "version": "Mon, 22 Aug 2016 22:09:22 GMT",
+      "bytes": 8471521,
+      "sha256": "d7cd44352127b1e34f3a720ebea86093ef255a38f1612a85a2962b71bde8f394",
+      "delivery_status": "bundled",
+      "preparation_command": "bundled exact snapshot; do not replace with current annotation",
+      "identity_source": "human_preflight/raw/download_manifest.json",
+      "downloaded_this_release": false
+    },
+    {
+      "id": "hgnc",
+      "path": "human_preflight/raw/hgnc_complete_set.txt",
+      "url": "https://storage.googleapis.com/public-download-files/hgnc/tsv/tsv/hgnc_complete_set.txt?generation=1791553248802697",
+      "version": "Fri, 09 Oct 2026 13:40:48 GMT; GCS generation 1791553248802697",
+      "bytes": 16973159,
+      "sha256": "64fcdfcdf9bc0853ec502e0e4c7d6eb12647b2ca8b0e635ea04bdb584856baf7",
+      "delivery_status": "bundled",
+      "preparation_command": "bundled exact snapshot; do not replace with current annotation",
+      "identity_source": "human_preflight/raw/download_manifest.json",
+      "downloaded_this_release": false
+    },
+    {
+      "id": "sea-h5ad",
+      "path": "human_data/sea_hip/raw/SEAAD_HIP_RNAseq_final-nuclei.2026-06-22.h5ad",
+      "url": "https://sea-ad-single-cell-profiling.s3.amazonaws.com/HIP/RNAseq/SEAAD_HIP_RNAseq_final-nuclei.2026-06-22.h5ad?versionId=gsD.JfA_zahs_FTY4u3b.hvx9IiiKmxe",
+      "version": "2026-06-22; versionId=gsD.JfA_zahs_FTY4u3b.hvx9IiiKmxe",
+      "bytes": 4976204965,
+      "sha256": "4320d457052c18435143f3dd2caac3916c9e6180161a309cb53876ddbb871d36",
+      "delivery_status": "external_raw_omitted",
+      "preparation_command": "python get_inputs.py --id sea-h5ad --download --execute",
+      "identity_source": "human_data/sea_hip/download_manifest.json",
+      "downloaded_this_release": false
+    },
+    {
+      "id": "gencode-v32",
+      "path": "H2_design/raw/gencode.v32.primary_assembly.annotation.gtf.gz",
+      "url": "https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_32/gencode.v32.primary_assembly.annotation.gtf.gz",
+      "version": "GENCODE human v32 primary assembly",
+      "bytes": 43107903,
+      "sha256": "0c36c37abb0c88637b04a8e401c93f0199a65bbdd0702c9e13bdfbadc053fe1e",
+      "delivery_status": "external_annotation_omitted",
+      "preparation_command": "python get_inputs.py --id gencode-v32 --download --execute",
+      "identity_source": "H2_design/freeze_manifest.json; length_download_manifest.json",
+      "downloaded_this_release": false
+    },
+    {
+      "id": "sea-pseudobulk",
+      "path": "human_data/sea_hip/counts.npz",
+      "url": null,
+      "version": "locally derived from exact SEA HIP raw UMI release; not a separately published download",
+      "bytes": 107548030,
+      "sha256": "b5c00ae460cb10e65bfa079c86d2b15e976cc550f2e414c8d730f904b81a8ac2",
+      "delivery_status": "generated_large_intermediate_omitted",
+      "preparation_command": "python run.py sea-aggregate --execute (fresh scratch only; requires sea-h5ad)",
+      "identity_source": "H2_design/freeze_manifest.json; human_data/sea_hip/output_manifest.json",
+      "downloaded_this_release": false
+    },
+    {
+      "id": "original-donor-workbook",
+      "path": "human_preflight/raw/SEAAD_donors.xlsx",
+      "url": "https://cdn.prod.website-files.com/689cfbd308fa7373b604d290/68debdfdd1b8e9f8fd64dab0_sea-ad_cohort_donor_metadata_072524.xlsx",
+      "version": "filename 2024-07-25; prior source checksum",
+      "bytes": 45189,
+      "sha256": "d18faa1c51f426bb2bf17ce431878cfacce673729c1ee185be84a51d31271146",
+      "delivery_status": "not_required_for_runtime_minimal_six_column_projection_bundled",
+      "preparation_command": "Not auto-downloaded. Six-column HIP40 projection is bundled with exact source hash and column list.",
+      "identity_source": "human_metadata_gates/sources.tsv A03; human_preflight/preflight_report.md",
+      "downloaded_this_release": false
+    }
+  ],
+  "excluded_unneeded_gpl_family": {
+    "filename": "GPL570_family.soft.gz",
+    "recorded_bytes": 72283950733,
+    "required": false,
+    "reason": "Failed historic safety-limited download; GEO annot covers all 54675 matrix probes; never recommend the full family as a prerequisite"
+  },
+  "frozen_inputs": "provenance/source_map.json",
+  "dependency_DAG": "stages.json",
+  "historical_frozen_path_resolution": "provenance/frozen_path_map.json"
+}
